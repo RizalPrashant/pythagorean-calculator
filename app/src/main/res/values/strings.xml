@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Pythagorean Calculator</string>
+    <string name="how_it_works_title">How it works</string>
 </resources>

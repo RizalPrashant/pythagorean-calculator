@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/RizalPrashant/AndroidStudioProjects/PythagoreanCalculator/app/build/intermediates/res/merged/release/mipmap-xhdpi-v4/pythagoras.png",
+        "source": "/Users/RizalPrashant/AndroidStudioProjects/PythagoreanCalculator/app/src/main/res/mipmap-xhdpi/pythagoras.png"
+    },
+    {
+        "merged": "/Users/RizalPrashant/AndroidStudioProjects/PythagoreanCalculator/app/build/intermediates/res/merged/release/mipmap-xhdpi-v4/ic_launcher.png",
+        "source": "/Users/RizalPrashant/AndroidStudioProjects/PythagoreanCalculator/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    }
+]

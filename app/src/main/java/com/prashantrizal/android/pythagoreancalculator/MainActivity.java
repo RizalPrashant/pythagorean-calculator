@@ -1,26 +1,59 @@
 package com.prashantrizal.android.pythagoreancalculator;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnTouchListener;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.RelativeLayout;
-import android.view.View.OnTouchListener;
-import android.view.MotionEvent;
-import android.util.Log;
-import android.view.inputmethod.InputMethodManager;
-import android.app.Activity;
+
 
 public class MainActivity extends AppCompatActivity {
+    // User Input values spaces
+     EditText user_input_value_a ;
+     EditText user_input_value_b ;
+     EditText user_input_value_c ;
+     EditText user_input_value_angleA;
+     EditText user_input_value_angleB;
+
+    // TextView on the triangle
+     TextView textView_a;
+     TextView textView_b ;
+     TextView textView_c ;
+     TextView textView_angle_A ;
+     TextView textView_angle_B ;
+    double a;
+    double b;
+    double c;
+    double angle_a;
+    double angle_b;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        user_input_value_a = (EditText) findViewById(R.id.user_input_value_a);
+        user_input_value_b = (EditText) findViewById(R.id.user_input_value_b);
+        user_input_value_c = (EditText) findViewById(R.id.user_input_value_c);
+        user_input_value_angleA = (EditText) findViewById(R.id.user_input_value_angleA);
+        user_input_value_angleB = (EditText) findViewById(R.id.user_input_value_angleB);
 
-        RelativeLayout mainLayout = (RelativeLayout)findViewById(R.id.mainlayout);
+        // TextView on the triangle
+        textView_a = (TextView) findViewById(R.id.textView_a);
+        textView_b = (TextView) findViewById(R.id.textView_b);
+        textView_c = (TextView) findViewById(R.id.textView_c);
+        textView_angle_A = (TextView) findViewById(R.id.textView_angle_A);
+        textView_angle_B = (TextView) findViewById(R.id.textView_angle_B);
+
+        LinearLayout mainLayout = (LinearLayout)findViewById(R.id.mainlayout);
         mainLayout.setOnTouchListener(new OnTouchListener() {
 
             @Override
@@ -29,22 +62,13 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("Json Response", "Touch outside");
                 InputMethodManager inputMethodManager = (InputMethodManager)  MainActivity.this.getSystemService(Activity.INPUT_METHOD_SERVICE);
                 inputMethodManager.hideSoftInputFromWindow(MainActivity.this.getCurrentFocus().getWindowToken(), 0);
+                // decorView = getWindow().getDecorView();
                 return false;
             }
         });
-        // User Input values spaces
-        final EditText user_input_value_a = (EditText) findViewById(R.id.user_input_value_a);
-        final EditText user_input_value_b = (EditText) findViewById(R.id.user_input_value_b);
-        final EditText user_input_value_c = (EditText) findViewById(R.id.user_input_value_c);
-        final EditText user_input_value_angleA = (EditText) findViewById(R.id.user_input_value_angleA);
-        final EditText user_input_value_angleB = (EditText) findViewById(R.id.user_input_value_angleB);
 
-        // TextView on the triangle
-        final TextView textView_a = (TextView) findViewById(R.id.textView_a);
-        final TextView textView_b = (TextView) findViewById(R.id.textView_b);
-        final TextView textView_c = (TextView) findViewById(R.id.textView_c);
-        final TextView textView_angle_A = (TextView) findViewById(R.id.textView_angle_A);
-        final TextView textView_angle_B = (TextView) findViewById(R.id.textView_angle_B);
+
+
 
         // the three buttons
         Button button_calculate = (Button) findViewById(R.id.button_calculate);
@@ -69,10 +93,35 @@ public class MainActivity extends AppCompatActivity {
                 double angle_a = getValue(user_input_value_angleA);
                 double angle_b = getValue(user_input_value_angleB);
 
+
+
+
+                if (a > 100000 || b > 100000 || c > 100000){
+                    recreate();
+                    Toast.makeText(getApplicationContext(),"At least one number is too big",Toast.LENGTH_LONG).show();
+                    return;
+                }
+                if (angle_a >= 90 || angle_b >= 90){
+                    recreate();
+                    Toast.makeText(getApplicationContext(),"Angle should be less than 90",Toast.LENGTH_LONG).show();
+                    return;
+                }
+                if ((c != 0) && (c <= a || c<= b)){ // c != 0 because when its empty its always gonna be less than a and b
+                    recreate();
+                    Toast.makeText(getApplicationContext(),"hypotenuse cant be less than the other sides",Toast.LENGTH_LONG).show();
+                    return;
+                }
+                if (angle_a != 0 && angle_b != 0 && a == 0 && b == 0 && c == 0){
+                    recreate();
+                    Toast.makeText(getApplicationContext(),"Infinite triangles possible from only angular value.",Toast.LENGTH_LONG).show();
+                    return;
+                }
+
                 if (a != 0 && b != 0){
                     c = Math.sqrt(a * a + b * b);
                     angle_a = Math.toDegrees(Math.asin(a / c));
                     angle_b = Math.toDegrees(Math.asin(b / c));
+
                     textView_a.setText(String.format("%.1f", b));
                     textView_b.setText(String.format("%.1f", a));
                     textView_c.setText(String.format("%.1f", c));
@@ -81,7 +130,6 @@ public class MainActivity extends AppCompatActivity {
                     user_input_value_c.setText(String.valueOf(c));
                     user_input_value_angleA.setText(String.valueOf(angle_a));
                     user_input_value_angleB.setText(String.valueOf(angle_b));
-
                     return;
                 }
 
@@ -135,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
                     a = b * (Math.tan(Math.toRadians(angle_a)));
                     c = Math.sqrt(a * a + b * b);
                     angle_b = 90 - angle_a;
+
                     textView_a.setText(String.format("%.1f", b));
                     textView_b.setText(String.format("%.1f", a));
                     textView_c.setText(String.format("%.1f", c));
@@ -149,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
                     a = c * (Math.sin(Math.toRadians(angle_a)));
                     b = Math.sqrt(c * c - a * a);
                     angle_b = 90 - angle_a;
-                    textView_a.setText(String.format("%.1f",b));
+                    textView_a.setText(String.format("%.1f", b));
                     textView_b.setText(String.format("%.1f", a));
                     textView_c.setText(String.format("%.1f", c));
                     user_input_value_a.setText(String.valueOf(a));
@@ -221,12 +270,10 @@ public class MainActivity extends AppCompatActivity {
 
             private double getValue(EditText value){
                 try {
-                    double obtain_data = Double.parseDouble(value.getText().toString());
-                    return obtain_data;
+                    return Double.parseDouble(value.getText().toString());
                 }
                 catch(Exception E){
-                    double obtain_data = 0;
-                    return obtain_data;
+                    return (double) 0;
                 }
             }
 
@@ -235,7 +282,7 @@ public class MainActivity extends AppCompatActivity {
         button_reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            recreate();
+                recreate();
                 user_input_value_a.getText().clear();
                 user_input_value_b.getText().clear();
                 user_input_value_c.getText().clear();
@@ -247,9 +294,20 @@ public class MainActivity extends AppCompatActivity {
         button_exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            finish();
-            System.exit(0);
+                finish();
+                System.exit(0);
             }
         });
         }
+
+    public void display(double a,double b,double c,double angla,double angb) {
+        textView_a.setText(String.format("%.1f", b));
+        textView_b.setText(String.format("%.1f", a));
+        textView_c.setText(String.format("%.1f", c));
+        user_input_value_a.setText(String.valueOf(a));
+        user_input_value_b.setText(String.valueOf(b));
+        user_input_value_c.setText(String.valueOf(c));
+        user_input_value_angleA.setText(String.valueOf(angle_a));
+        user_input_value_angleB.setText(String.valueOf(angle_b));
+    }
 }
