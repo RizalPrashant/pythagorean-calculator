@@ -1,4 +1,4 @@
-package com.prashantrizal.android.pythagoreancalculator;
+package com.prashantrizal.android.pythagoreancalculator.pythagorascalculator;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,21 +14,23 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.prashantrizal.android.pythagoreancalculator.R;
+
 
 public class MainActivity extends AppCompatActivity {
     // User Input values spaces
-     EditText user_input_value_a ;
-     EditText user_input_value_b ;
-     EditText user_input_value_c ;
-     EditText user_input_value_angleA;
-     EditText user_input_value_angleB;
+    EditText user_input_value_a ;
+    EditText user_input_value_b ;
+    EditText user_input_value_c ;
+    EditText user_input_value_angleA;
+    EditText user_input_value_angleB;
 
     // TextView on the triangle
-     TextView textView_a;
-     TextView textView_b ;
-     TextView textView_c ;
-     TextView textView_angle_A ;
-     TextView textView_angle_B ;
+    TextView textView_a;
+    TextView textView_b ;
+    TextView textView_c ;
+    TextView textView_angle_A ;
+    TextView textView_angle_B ;
     double a;
     double b;
     double c;
@@ -60,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
             public boolean onTouch(View v, MotionEvent event) {
                 // TODO Auto-generated method stub
                 Log.d("Json Response", "Touch outside");
-                InputMethodManager inputMethodManager = (InputMethodManager) MainActivity.this.getSystemService(Activity.INPUT_METHOD_SERVICE);
-                inputMethodManager.hideSoftInputFromWindow(MainActivity.this.getCurrentFocus().getWindowToken(), 0);
+                InputMethodManager inputMethodManager = (InputMethodManager) com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.MainActivity.this.getSystemService(Activity.INPUT_METHOD_SERVICE);
+                inputMethodManager.hideSoftInputFromWindow(com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.MainActivity.this.getCurrentFocus().getWindowToken(), 0);
                 return false;
             }
         });
