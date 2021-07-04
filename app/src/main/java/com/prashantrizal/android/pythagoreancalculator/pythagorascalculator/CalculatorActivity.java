@@ -1,12 +1,12 @@
 package com.prashantrizal.android.pythagoreancalculator.pythagorascalculator;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.app.Activity;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnTouchListener;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,8 +16,7 @@ import android.widget.Toast;
 
 import com.prashantrizal.android.pythagoreancalculator.R;
 
-
-public class MainActivity extends AppCompatActivity {
+public class CalculatorActivity extends AppCompatActivity {
     // User Input values spaces
     EditText user_input_value_a ;
     EditText user_input_value_b ;
@@ -41,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calculator);
+
         user_input_value_a = (EditText) findViewById(R.id.user_input_value_a);
         user_input_value_b = (EditText) findViewById(R.id.user_input_value_b);
         user_input_value_c = (EditText) findViewById(R.id.user_input_value_c);
@@ -55,15 +55,18 @@ public class MainActivity extends AppCompatActivity {
         textView_angle_A = (TextView) findViewById(R.id.textView_angle_A);
         textView_angle_B = (TextView) findViewById(R.id.textView_angle_B);
 
-        LinearLayout mainLayout = (LinearLayout) findViewById(R.id.mainlayout);
-        mainLayout.setOnTouchListener(new OnTouchListener() {
+        LinearLayout mainLayout = (LinearLayout) findViewById(R.id.calculatorLayout);
+        mainLayout.setOnTouchListener(new View.OnTouchListener() {
 
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 // TODO Auto-generated method stub
                 Log.d("Json Response", "Touch outside");
-                InputMethodManager inputMethodManager = (InputMethodManager) com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.MainActivity.this.getSystemService(Activity.INPUT_METHOD_SERVICE);
-                inputMethodManager.hideSoftInputFromWindow(com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.MainActivity.this.getCurrentFocus().getWindowToken(), 0);
+                InputMethodManager inputMethodManager = (InputMethodManager) com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.CalculatorActivity.this.getSystemService(Activity.INPUT_METHOD_SERVICE);
+                View focusedView = com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.CalculatorActivity.this.getCurrentFocus();
+                if (focusedView != null) {
+                    inputMethodManager.hideSoftInputFromWindow(com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.CalculatorActivity.this.getCurrentFocus().getWindowToken(), 0);
+                }
                 return false;
             }
         });
