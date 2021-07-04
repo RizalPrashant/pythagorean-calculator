@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context="com.prashantrizal.android.pythagoreancalculator.MainActivity">
+    tools:context="com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="249dp"
-        android:background="#dfdfdf"
+        android:background="#E5E5E5"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_vertical_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
@@ -86,13 +86,30 @@
     </RelativeLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingBottom="16dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/sidesText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_b"
+            android:gravity="center"
+            android:text="Sides"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingLeft="8dp">
+            android:paddingLeft="50dp">
 
             <TextView
                 android:id="@+id/textView6"
@@ -100,9 +117,9 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView_b"
+                android:layout_below="@+id/sidesText"
                 android:gravity="center"
-                android:text="a = "
+                android:text="A = "
                 android:textColor="#900606"
                 android:textSize="20dp" />
 
@@ -122,8 +139,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingLeft="8dp"
-
+            android:paddingLeft="50dp"
             >
 
             <TextView
@@ -133,7 +149,7 @@
                 android:layout_alignBottom="@+id/user_input_value_b"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:text="b = "
+                android:text="B = "
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -153,7 +169,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingLeft="8dp">
+            android:paddingLeft="50dp">
 
             <TextView
                 android:id="@+id/textView8"
@@ -162,7 +178,7 @@
                 android:layout_alignBottom="@+id/user_input_value_c"
                 android:layout_toLeftOf="@+id/user_input_value_c"
                 android:layout_toStartOf="@+id/user_input_value_c"
-                android:text="c = "
+                android:text="C = "
                 android:textColor="#02349f"
                 android:textSize="20dp" />
 
@@ -178,12 +194,24 @@
                 android:maxLength="10" />
         </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/anglesText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView8"
+            android:gravity="center"
+            android:text="Angles"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingLeft="8dp">
+            android:paddingLeft="50dp">
 
             <TextView
                 android:id="@+id/textView9"
@@ -191,7 +219,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/textView10"
                 android:layout_alignRight="@+id/textView10"
-                android:text="Angle A = "
+                android:text="A = "
                 android:textColor="#b2021d"
                 android:textSize="20dp" />
 
@@ -211,7 +239,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingLeft="8dp">
+            android:paddingLeft="50dp">
 
             <TextView
                 android:id="@+id/textView10"
@@ -220,7 +248,7 @@
                 android:layout_alignBottom="@+id/user_input_value_angleB"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:text="Angle B = "
+                android:text="B = "
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -236,6 +264,7 @@
                 android:maxLength="10"
                 android:text="" />
         </LinearLayout>
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
