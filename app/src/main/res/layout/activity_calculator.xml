@@ -298,6 +298,7 @@
             android:layout_marginTop="18dp"
             android:layout_gravity="bottom"
             android:paddingHorizontal="40dp"
+            android:paddingVertical="5dp"
             android:gravity="center_vertical"
             >
 
