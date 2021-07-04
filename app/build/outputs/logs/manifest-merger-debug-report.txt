@@ -70,7 +70,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/riza
 	android:allowBackup
 		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:10:9-40
+		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:10:9-65
 activity#com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.HelpActivity
 ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:11:9-17:20
 	android:name
