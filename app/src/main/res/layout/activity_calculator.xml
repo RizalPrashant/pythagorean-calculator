@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="#DACFD7"
-            android:paddingLeft="8dp"
+            android:paddingHorizontal="40dp"
             >
 
             <TextView
@@ -276,7 +276,8 @@
             android:layout_height="match_parent"
             android:layout_marginTop="18dp"
             android:layout_gravity="bottom"
-            android:gravity="center"
+            android:paddingHorizontal="40dp"
+            android:gravity="center_vertical"
             >
 
             <Button
@@ -286,7 +287,6 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:backgroundTint="#F5F5F5"
-                android:paddingLeft="10dp"
                 android:text="Calculate" />
 
             <Button
@@ -295,7 +295,8 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/button_calculate"
                 android:backgroundTint="#F5F5F5"
-                android:paddingLeft="8dp"
+                android:paddingLeft="12dp"
+                android:layout_marginLeft="8dp"
                 android:text="Clear All" />
 
             <Button
@@ -304,7 +305,8 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/button_reset"
                 android:backgroundTint="#F5F5F5"
-                android:paddingLeft="8dp"
+                android:paddingLeft="12dp"
+                android:layout_marginLeft="8dp"
                 android:text="Go Back" />
         </RelativeLayout>
 </LinearLayout>
