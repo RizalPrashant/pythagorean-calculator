@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/calculatorLayout"
+    tools:context=".pythagorascalculator.CalculatorActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="40dp"
+        app:navigationIcon="@drawable/ic_home"
+        app:title="Pythagoras Calculator"
+        app:titleTextColor="@android:color/white"
+        android:background="@drawable/toolbar_border">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/steps_background"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Hi there dsfh sdfkj sdfkj \nDfjkfdfjkddsfkj"
+            android:textSize="20dp"
+            android:lineSpacingExtra="0dp"
+            android:paddingHorizontal="60dp"
+            android:paddingVertical="42dp"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#1152D1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bottombar_border"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="bottom"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="5dp"
+        android:gravity="center_vertical"
+        >
+
+        <Button
+            android:id="@+id/button_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:elevation="20dp"
+            android:backgroundTint="#F5F5F5"
+            android:text="Calculate" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button_calculate"
+            android:backgroundTint="#F5F5F5"
+            android:paddingLeft="12dp"
+            android:layout_marginLeft="8dp"
+            android:text="Clear All" />
+
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button_reset"
+            android:backgroundTint="#F5F5F5"
+            android:paddingLeft="12dp"
+            android:layout_marginLeft="8dp"
+            android:text="Go Back" />
+    </RelativeLayout>
+</LinearLayout>

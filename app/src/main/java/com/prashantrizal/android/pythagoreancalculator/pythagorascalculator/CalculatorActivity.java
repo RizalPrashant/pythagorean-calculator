@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -17,7 +18,11 @@ import android.widget.Toast;
 
 import com.prashantrizal.android.pythagoreancalculator.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CalculatorActivity extends AppCompatActivity {
+    ArrayList<Double> userInputList =  new ArrayList<>();
     // User Input values spaces
     EditText user_input_value_a ;
     EditText user_input_value_b ;
@@ -47,6 +52,12 @@ public class CalculatorActivity extends AppCompatActivity {
         // Sets the Toolbar to act as the ActionBar for this Activity window.
         // Make sure the toolbar exists in the activity and is not null
         setSupportActionBar(toolbar);
+
+        toolbar.setNavigationOnClickListener(v -> {
+            Intent intent = new Intent(CalculatorActivity.this, StepsActivity.class);
+            intent.putExtra("userInputList", userInputList);
+            startActivity(intent);
+        });
 
         user_input_value_a = (EditText) findViewById(R.id.user_input_value_a);
         user_input_value_b = (EditText) findViewById(R.id.user_input_value_b);
@@ -193,6 +204,7 @@ public class CalculatorActivity extends AppCompatActivity {
             }
 
             private void display(double a, double b, double c, double angle_a, double angle_b) {
+                storeUserInputList(a, b, c, angle_a, angle_b);
                 textView_a.setText(String.format("%.1f", b));
                 textView_b.setText(String.format("%.1f", a));
                 textView_c.setText(String.format("%.1f", c));
@@ -231,5 +243,13 @@ public class CalculatorActivity extends AppCompatActivity {
                 System.exit(0);
             }
         });
+    }
+
+    private void storeUserInputList(double a, double b, double c, double angle_a, double angle_b) {
+        if (a != 0) userInputList.add(a);
+        if (b != 0) userInputList.add(b);
+        if (c != 0) userInputList.add(c);
+        if (angle_a != 0) userInputList.add(angle_a);
+        if (angle_b != 0) userInputList.add(angle_b);
     }
 }

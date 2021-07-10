@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-22:12
 MERGED from [com.google.android.material:material:1.2.1] /Users/rizalprashant/.gradle/caches/transforms-2/files-2.1/c63d4a666c0a1ba98c2e2f24b9638d9e/material-1.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/rizalprashant/.gradle/caches/transforms-2/files-2.1/a4bf7842722ec4460f5546066eab47a3/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/rizalprashant/.gradle/caches/transforms-2/files-2.1/4f9c7f78c15bb692cf0895b881aafbad/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
@@ -32,25 +32,25 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/rizalprashant/.
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/rizalprashant/.gradle/caches/transforms-2/files-2.1/06bc4641de51b04d4df94808d6e05292/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/rizalprashant/.gradle/caches/transforms-2/files-2.1/1b64911e987df0fea019408e241659d7/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/rizalprashant/.gradle/caches/transforms-2/files-2.1/a77c810a56173ccf6fb339f045a6aacd/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-22:12
 	package
 		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:3:5-62
 		INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml
-		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-22:12
 		INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml
-		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-22:12
 		INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:5:5-19:19
+ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:5:5-20:19
 MERGED from [com.google.android.material:material:1.2.1] /Users/rizalprashant/.gradle/caches/transforms-2/files-2.1/c63d4a666c0a1ba98c2e2f24b9638d9e/material-1.2.1/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] /Users/rizalprashant/.gradle/caches/transforms-2/files-2.1/c63d4a666c0a1ba98c2e2f24b9638d9e/material-1.2.1/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/rizalprashant/.gradle/caches/transforms-2/files-2.1/a4bf7842722ec4460f5546066eab47a3/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
@@ -71,24 +71,28 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/riza
 		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:10:9-65
+activity#com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.StepsActivity
+ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:11:9-81
+	android:name
+		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:11:19-69
 activity#com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.HelpActivity
-ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:11:9-17:20
+ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:11:19-68
+		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:12:19-68
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:12:13-16:29
+ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:13:17-69
+ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:13:25-66
+		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:15:17-77
+ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:15:27-74
+		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:16:27-74
 activity#com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.CalculatorActivity
-ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:18:9-77
+ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:19:9-77
 	android:name
-		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:18:19-74
+		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:19:19-74
 uses-sdk
 INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml
