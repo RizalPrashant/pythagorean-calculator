@@ -13,8 +13,19 @@
         android:minHeight="?attr/actionBarSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_steps"
+        app:title="Pythagoras Calculator"
         app:titleTextColor="@android:color/white"
         android:background="@drawable/toolbar_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icons8_info"
+            android:maxHeight="2dp"
+            android:paddingStart="95dp"
+            android:paddingEnd="10dp"
+            ></ImageView>
     </androidx.appcompat.widget.Toolbar>
 
         <RelativeLayout
