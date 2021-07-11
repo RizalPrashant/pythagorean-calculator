@@ -19,10 +19,11 @@ import android.widget.Toast;
 import com.prashantrizal.android.pythagoreancalculator.R;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class CalculatorActivity extends AppCompatActivity {
-    ArrayList<Double> userInputList =  new ArrayList<>();
+    HashMap<String, Double> hMap = new HashMap<>();
     // User Input values spaces
     EditText user_input_value_a ;
     EditText user_input_value_b ;
@@ -49,13 +50,13 @@ public class CalculatorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_calculator);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
+        Intent intent = new Intent(CalculatorActivity.this, StepsActivity.class);
         // Sets the Toolbar to act as the ActionBar for this Activity window.
         // Make sure the toolbar exists in the activity and is not null
         setSupportActionBar(toolbar);
 
         toolbar.setNavigationOnClickListener(v -> {
-            Intent intent = new Intent(CalculatorActivity.this, StepsActivity.class);
-            intent.putExtra("userInputList", userInputList);
+            intent.putExtra("userInputMap", hMap);
             startActivity(intent);
         });
 
@@ -97,6 +98,7 @@ public class CalculatorActivity extends AppCompatActivity {
         button_calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                hMap.clear();
                 double a = getValue(user_input_value_a);
                 double b = getValue(user_input_value_b);
                 double c = getValue(user_input_value_c);
@@ -246,10 +248,10 @@ public class CalculatorActivity extends AppCompatActivity {
     }
 
     private void storeUserInputList(double a, double b, double c, double angle_a, double angle_b) {
-        if (a != 0) userInputList.add(a);
-        if (b != 0) userInputList.add(b);
-        if (c != 0) userInputList.add(c);
-        if (angle_a != 0) userInputList.add(angle_a);
-        if (angle_b != 0) userInputList.add(angle_b);
+        if (a != 0) hMap.put("a", a);
+        if (b != 0) hMap.put("b", b);
+        if (c != 0) hMap.put("c", c);
+        if (angle_a != 0) hMap.put("angle_a", angle_a);
+        if (angle_b != 0) hMap.put("angle_b", angle_b);
     }
 }
