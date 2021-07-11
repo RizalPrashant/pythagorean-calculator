@@ -36,7 +36,7 @@
             android:text="Hi there dsfh sdfkj sdfkj \nDfjkfdfjkddsfkj \nDsfjkdsfj"
             android:textSize="20dp"
             android:lineSpacingExtra="16dp"
-            android:paddingHorizontal="60dp"
+            android:paddingHorizontal="70dp"
             android:paddingVertical="70dp"
             />
 
