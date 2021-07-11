@@ -31,11 +31,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/steps_view"
-            android:text="Hi there dsfh sdfkj sdfkj \nDfjkfdfjkddsfkj"
+            android:fontFamily="casual"
+            android:textColor="@color/colorPrimary"
+            android:text="Hi there dsfh sdfkj sdfkj \nDfjkfdfjkddsfkj \nDsfjkdsfj"
             android:textSize="20dp"
-            android:lineSpacingExtra="0dp"
+            android:lineSpacingExtra="16dp"
             android:paddingHorizontal="60dp"
-            android:paddingVertical="42dp"
+            android:paddingVertical="70dp"
             />
 
 

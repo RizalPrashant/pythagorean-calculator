@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.Html;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.SuperscriptSpan;
 import android.util.Log;
 import android.widget.TextView;
 
@@ -49,9 +52,9 @@ public class StepsActivity extends AppCompatActivity {
             steps_view.append("c\u00B2 = " + b + "\u00B2" +  "+" + a + "\u00B2" + "\n");
             steps_view.append("c = " + c + "\n");
             steps_view.append("Angle A = " + "sin-1(" + a + "/" + c + ")" + "\n");
-            steps_view.append("Angle A = " + angle_a);
+            steps_view.append("Angle A = " + angle_a + "\n");
             steps_view.append("Angle B = " + "sin-1(" + b + "/" + c + ")" + "\n");
-            steps_view.append("Angle B = " + angle_b);
+            steps_view.append("Angle B = " + angle_b + "\n");
         }
         else if (userInputMap.containsKey("a") && userInputMap.containsKey("c")) {
             double a = userInputMap.get("a");
@@ -67,9 +70,9 @@ public class StepsActivity extends AppCompatActivity {
             steps_view.append("b\u00B2 = " + c + "\u00B2" + "-" + a + "\u00B2" + "\n");
             steps_view.append("b = " + b + "\n");
             steps_view.append("Angle A = " + "sin-1(" + a + "/" + c + ")" + "\n");
-            steps_view.append("Angle A = " + angle_a);
+            steps_view.append("Angle A = " + angle_a +  "\n");
             steps_view.append("Angle B = " + "sin-1(" + b + "/" + c + ")" + "\n");
-            steps_view.append("Angle B = " + angle_b);
+            steps_view.append("Angle B = " + angle_b +  "\n");
 
         }
         else if (userInputMap.containsKey("b") && userInputMap.containsKey("c")) {
@@ -86,9 +89,9 @@ public class StepsActivity extends AppCompatActivity {
             steps_view.append("a\u00B2 = " + c + "\u00B2" + "-" + b + "\u00B2" + "\n");
             steps_view.append("a = " + a + "\n");
             steps_view.append("Angle A = " + "sin-1(" + a + "/" + c + ")" + "\n");
-            steps_view.append("Angle A = " + angle_a);
+            steps_view.append("Angle A = " + angle_a +  "\n");
             steps_view.append("Angle B = " + "sin-1(" + b + "/" + c + ")" + "\n");
-            steps_view.append("Angle B = " + angle_b);
+            steps_view.append("Angle B = " + angle_b +  "\n");
         }
         else if (userInputMap.containsKey("angle_a") && userInputMap.containsKey("a")) {
             double a = userInputMap.get("a");
@@ -99,14 +102,14 @@ public class StepsActivity extends AppCompatActivity {
 
             steps_view.setText("a = " + a + "\n");
             steps_view.append("Angle A = " + angle_a + "\n");
-            steps_view.append("b = " + a + "/ tan " + angle_a);
-            steps_view.append("b = " + b);
+            steps_view.append("b = " + a + "/ tan " + angle_a +  "\n");
+            steps_view.append("b = " + b +  "\n");
             steps_view.append("h\u00B2 = p\u00B2 + b\u00B2" + "\n");
             steps_view.append("c\u00B2 = b\u00B2 + a\u00B2" + "\n");
             steps_view.append("c\u00B2 = " + a + "\u00B2" + "+" + b + "\u00B2" + "\n");
             steps_view.append("c = " + c + "\n");
-            steps_view.append("Angle B = 90 - " + angle_a);
-            steps_view.append("Angle B =" + angle_b);
+            steps_view.append("Angle B = 90 - " + angle_a +  "\n");
+            steps_view.append("Angle B =" + angle_b +  "\n");
         }
         else if (userInputMap.containsKey("angle_a") && userInputMap.containsKey("b")) {
             double b = userInputMap.get("b");
@@ -117,14 +120,14 @@ public class StepsActivity extends AppCompatActivity {
 
             steps_view.setText("b = " + b + "\n");
             steps_view.append("Angle A = " + angle_a + "\n");
-            steps_view.append("a = " + b + "* tan " + angle_a);
-            steps_view.append("a = " + a);
+            steps_view.append("a = " + b + "* tan " + angle_a +  "\n");
+            steps_view.append("a = " + a  +  "\n");
             steps_view.append("h\u00B2 = p\u00B2 + b\u00B2" + "\n");
             steps_view.append("c\u00B2 = b\u00B2 + a\u00B2" + "\n");
             steps_view.append("c\u00B2 = " + a + "\u00B2" + "+" + b + "\u00B2" + "\n");
             steps_view.append("c = " + c + "\n");
-            steps_view.append("Angle B = 90 - " + angle_a);
-            steps_view.append("Angle B =" + angle_b);
+            steps_view.append("Angle B = 90 - " + angle_a +  "\n");
+            steps_view.append("Angle B =" + angle_b +  "\n");
         }
         else if (userInputMap.containsKey("angle_a") && userInputMap.containsKey("c")) {
             double c = userInputMap.get("c");
@@ -135,14 +138,14 @@ public class StepsActivity extends AppCompatActivity {
 
             steps_view.setText("c = " + c + "\n");
             steps_view.append("Angle A = " + angle_a + "\n");
-            steps_view.append("a = " + c + "* sin " + angle_a);
-            steps_view.append("a = " + a);
+            steps_view.append("a = " + c + "* sin " + angle_a +  "\n");
+            steps_view.append("a = " + a +  "\n");
             steps_view.append("h\u00B2 = p\u00B2 + b\u00B2" + "\n");
             steps_view.append("c\u00B2 = b\u00B2 + a\u00B2" + "\n");
             steps_view.append("b\u00B2 = " + c + "\u00B2" + "-" + a + "\u00B2" + "\n");
             steps_view.append("b = " + b + "\n");
-            steps_view.append("Angle B = 90 - " + angle_a);
-            steps_view.append("Angle B =" + angle_b);
+            steps_view.append("Angle B = 90 - " + angle_a +  "\n");
+            steps_view.append("Angle B =" + angle_b +  "\n");
         }
         else if (userInputMap.containsKey("angle_b") && userInputMap.containsKey("a")) {
             double a = userInputMap.get("a");
@@ -153,14 +156,14 @@ public class StepsActivity extends AppCompatActivity {
 
             steps_view.setText("a = " + a + "\n");
             steps_view.append("Angle B = " + angle_b + "\n");
-            steps_view.append("b = " + a + "* tan " + angle_b);
-            steps_view.append("b = " + b);
+            steps_view.append("b = " + a + "* tan " + angle_b +  "\n");
+            steps_view.append("b = " + b +  "\n");
             steps_view.append("h\u00B2 = p\u00B2 + b\u00B2" + "\n");
             steps_view.append("c\u00B2 = b\u00B2 + a\u00B2" + "\n");
             steps_view.append("c\u00B2 = " + a + "\u00B2" + "+" + b + "\u00B2" + "\n");
             steps_view.append("c = " + c + "\n");
-            steps_view.append("Angle A = 90 - " + angle_b);
-            steps_view.append("Angle A =" + angle_a);
+            steps_view.append("Angle A = 90 - " + angle_b +  "\n");
+            steps_view.append("Angle A =" + angle_a +  "\n");
         }
         else if (userInputMap.containsKey("angle_b") && userInputMap.containsKey("b")) {
             double b = userInputMap.get("b");
@@ -171,14 +174,14 @@ public class StepsActivity extends AppCompatActivity {
 
             steps_view.setText("b = " + b + "\n");
             steps_view.append("Angle B = " + angle_b + "\n");
-            steps_view.append("a = " + b + "/ tan " + angle_b);
-            steps_view.append("a = " + a);
+            steps_view.append("a = " + b + "/ tan " + angle_b +  "\n");
+            steps_view.append("a = " + a +  "\n");
             steps_view.append("h\u00B2 = p\u00B2 + b\u00B2" + "\n");
             steps_view.append("c\u00B2 = b\u00B2 + a\u00B2" + "\n");
             steps_view.append("c\u00B2 = " + a + "\u00B2" + "+" + b + "\u00B2" + "\n");
             steps_view.append("c = " + c + "\n");
-            steps_view.append("Angle A = 90 - " + angle_b);
-            steps_view.append("Angle A =" + angle_a);
+            steps_view.append("Angle A = 90 - " + angle_b +  "\n");
+            steps_view.append("Angle A =" + angle_a +  "\n");
         }
         else if (userInputMap.containsKey("angle_b") && userInputMap.containsKey("c")) {
             double c = userInputMap.get("c");
@@ -189,14 +192,14 @@ public class StepsActivity extends AppCompatActivity {
 
             steps_view.setText("c = " + c + "\n");
             steps_view.append("Angle B = " + angle_b + "\n");
-            steps_view.append("b = " + c + "* sin " + angle_b);
-            steps_view.append("b = " + b);
+            steps_view.append("b = " + c + "* sin " + angle_b +  "\n");
+            steps_view.append("b = " + b +  "\n");
             steps_view.append("h\u00B2 = p\u00B2 + b\u00B2" + "\n");
             steps_view.append("c\u00B2 = b\u00B2 + a\u00B2" + "\n");
             steps_view.append("a\u00B2 = " + c + "\u00B2" + "-" + b + "\u00B2" + "\n");
             steps_view.append("c = " + c + "\n");
-            steps_view.append("Angle A = 90 - " + angle_b);
-            steps_view.append("Angle A =" + angle_a);
+            steps_view.append("Angle A = 90 - " + angle_b +  "\n");
+            steps_view.append("Angle A =" + angle_a +  "\n");
         }
     }
 }

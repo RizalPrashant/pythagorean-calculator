@@ -127,6 +127,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 }
 
                 if (a != 0 && b != 0) {
+                    storeUserInputList(a, b, c, angle_a, angle_b);
                     c = Math.sqrt(a * a + b * b);
                     angle_a = Math.toDegrees(Math.asin(a / c));
                     angle_b = Math.toDegrees(Math.asin(b / c));
@@ -136,6 +137,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 }
 
                 if (a != 0 && c != 0) {
+                    storeUserInputList(a, b, c, angle_a, angle_b);
                     b = Math.sqrt(c * c - a * a);
                     angle_a = Math.toDegrees(Math.asin(a / c));
                     angle_b = Math.toDegrees(Math.asin(b / c));
@@ -144,6 +146,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 }
 
                 if (b != 0 && c != 0) {
+                    storeUserInputList(a, b, c, angle_a, angle_b);
                     a = Math.sqrt(c * c - b * b);
                     angle_a = Math.toDegrees(Math.asin(a / c));
                     angle_b = Math.toDegrees(Math.asin(b / c));
@@ -152,6 +155,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 }
 
                 if (angle_a != 0 && a != 0) {
+                    storeUserInputList(a, b, c, angle_a, angle_b);
                     b = a / (Math.tan(Math.toRadians(angle_a)));
                     c = Math.sqrt(a * a + b * b);
                     angle_b = 90 - angle_a;
@@ -160,6 +164,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 }
 
                 if (angle_a != 0 && b != 0) {
+                    storeUserInputList(a, b, c, angle_a, angle_b);
                     a = b * (Math.tan(Math.toRadians(angle_a)));
                     c = Math.sqrt(a * a + b * b);
                     angle_b = 90 - angle_a;
@@ -169,6 +174,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 }
 
                 if (angle_a != 0 && c != 0) {
+                    storeUserInputList(a, b, c, angle_a, angle_b);
                     a = c * (Math.sin(Math.toRadians(angle_a)));
                     b = Math.sqrt(c * c - a * a);
                     angle_b = 90 - angle_a;
@@ -178,6 +184,7 @@ public class CalculatorActivity extends AppCompatActivity {
 
 
                 if (angle_b != 0 && a != 0) {
+                    storeUserInputList(a, b, c, angle_a, angle_b);
                     b = a * (Math.tan(Math.toRadians(angle_b)));
                     c = Math.sqrt(a * a + b * b);
                     angle_a = 90 - angle_b;
@@ -186,6 +193,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 }
 
                 if (angle_b != 0 && b != 0) {
+                    storeUserInputList(a, b, c, angle_a, angle_b);
                     a = b / (Math.tan(Math.toRadians(angle_b)));
                     c = Math.sqrt(a * a + b * b);
                     angle_a = 90 - angle_b;
@@ -194,6 +202,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 }
 
                 if (angle_b != 0 && c != 0) {
+                    storeUserInputList(a, b, c, angle_a, angle_b);
                     b = c * (Math.sin(Math.toRadians(angle_b)));
                     a = Math.sqrt(c * c - b * b);
                     angle_a = 90 - angle_b;
@@ -206,7 +215,6 @@ public class CalculatorActivity extends AppCompatActivity {
             }
 
             private void display(double a, double b, double c, double angle_a, double angle_b) {
-                storeUserInputList(a, b, c, angle_a, angle_b);
                 textView_a.setText(String.format("%.1f", b));
                 textView_b.setText(String.format("%.1f", a));
                 textView_c.setText(String.format("%.1f", c));
