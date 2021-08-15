@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -58,6 +59,12 @@ public class CalculatorActivity extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(v -> {
             intent.putExtra("userInputMap", hMap);
             startActivity(intent);
+        });
+
+        ImageView infoButton = findViewById(R.id.info_button);
+        infoButton.setOnClickListener(v -> {
+            Intent info_intent = new Intent(CalculatorActivity.this, HelpActivity.class);
+            startActivity(info_intent);
         });
 
         user_input_value_a = (EditText) findViewById(R.id.user_input_value_a);
@@ -233,6 +240,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 }
             }
         });
+
 
         button_reset.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -9,15 +9,14 @@
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
         android:id="@+id/toolbar"
         android:minHeight="?attr/actionBarSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="40dp"
-        app:navigationIcon="@drawable/ic_home"
-        app:title="Pythagoras Calculator"
-        app:titleTextColor="@android:color/white"
-        android:background="@drawable/toolbar_border">
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:background="@color/primary_orange">
+
     </androidx.appcompat.widget.Toolbar>
 
 
@@ -25,20 +24,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/steps_background"
+
         >
-        <TextView
+        <ListView
+            android:id="@+id/steps_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/steps_view"
-            android:fontFamily="casual"
-            android:textColor="@color/colorPrimary"
-            android:text="Hi there dsfh sdfkj sdfkj \nDfjkfdfjkddsfkj \nDsfjkdsfj"
-            android:textSize="20dp"
-            android:lineSpacingExtra="16dp"
-            android:paddingHorizontal="70dp"
-            android:paddingVertical="70dp"
-            />
+            android:divider="@drawable/horizontal_section_header"
+            ></ListView>
+
 
 
     </LinearLayout>

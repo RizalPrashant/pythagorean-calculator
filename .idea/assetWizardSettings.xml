@@ -79,7 +79,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$USER_HOME$/Downloads/steps_background.png" />
+                                                <entry key="imagePath" value="$USER_HOME$/Downloads/Info Page.png" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -111,7 +111,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="steps_background" />
+                                      <entry key="outputName" value="pythagoras_info" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -301,8 +301,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_home" />
-                            <entry key="sourceFile" value="$USER_HOME$/Downloads/home.svg" />
+                            <entry key="outputName" value="ic_horizontal_line" />
+                            <entry key="sourceFile" value="$USER_HOME$/Downloads/horizontal line.svg" />
                           </map>
                         </option>
                       </PersistentState>
