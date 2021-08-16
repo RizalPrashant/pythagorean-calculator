@@ -342,6 +342,6 @@
                 android:backgroundTint="#F5F5F5"
                 android:paddingLeft="12dp"
                 android:layout_marginLeft="8dp"
-                android:text="Terminate" /> <!-- Change to Go Back later -->
+                android:text="Go Back" />
         </RelativeLayout>
 </LinearLayout>

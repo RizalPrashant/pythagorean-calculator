@@ -47,7 +47,7 @@ public class StepsActivity extends AppCompatActivity {
             HashMap<String, Double> userInputMap = (HashMap<String, Double>) bundle.getSerializable("userInputMap");
 
             if(userInputMap.size() == 0 || userInputMap.size() == 1) {
-                //steps_list_item.setText("Please type correct values and calculate result first to see steps");
+                listValue.add("Please type correct values and calculate result first to see steps");
             }
             else {
                 executeStepsProduction(userInputMap, listValue);
