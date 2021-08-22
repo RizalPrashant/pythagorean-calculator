@@ -1,4 +1,4 @@
-package com.prashantrizal.android.pythagoreancalculator.pythagorascalculator;
+package com.prashantrizal.android.pythagoreancalculator1.pythagorascalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -17,11 +17,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.prashantrizal.android.pythagoreancalculator.R;
+import com.prashantrizal.android.pythagoreancalculator1.R;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class CalculatorActivity extends AppCompatActivity {
     HashMap<String, Double> hMap = new HashMap<>();
@@ -87,10 +85,10 @@ public class CalculatorActivity extends AppCompatActivity {
             public boolean onTouch(View v, MotionEvent event) {
                 // TODO Auto-generated method stub
                 Log.d("Json Response", "Touch outside");
-                InputMethodManager inputMethodManager = (InputMethodManager) com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.CalculatorActivity.this.getSystemService(Activity.INPUT_METHOD_SERVICE);
-                View focusedView = com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.CalculatorActivity.this.getCurrentFocus();
+                InputMethodManager inputMethodManager = (InputMethodManager) com.prashantrizal.android.pythagoreancalculator1.pythagorascalculator.CalculatorActivity.this.getSystemService(Activity.INPUT_METHOD_SERVICE);
+                View focusedView = com.prashantrizal.android.pythagoreancalculator1.pythagorascalculator.CalculatorActivity.this.getCurrentFocus();
                 if (focusedView != null) {
-                    inputMethodManager.hideSoftInputFromWindow(com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.CalculatorActivity.this.getCurrentFocus().getWindowToken(), 0);
+                    inputMethodManager.hideSoftInputFromWindow(com.prashantrizal.android.pythagoreancalculator1.pythagorascalculator.CalculatorActivity.this.getCurrentFocus().getWindowToken(), 0);
                 }
                 return false;
             }

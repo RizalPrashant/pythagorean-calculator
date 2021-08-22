@@ -1,4 +1,4 @@
-package com.prashantrizal.android.pythagoreancalculator;
+package com.prashantrizal.android.pythagoreancalculator1;
 
 import org.junit.Test;
 

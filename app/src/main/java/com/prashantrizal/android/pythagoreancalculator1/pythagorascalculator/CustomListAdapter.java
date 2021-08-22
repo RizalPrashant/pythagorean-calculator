@@ -1,15 +1,13 @@
-package com.prashantrizal.android.pythagoreancalculator.pythagorascalculator;
+package com.prashantrizal.android.pythagoreancalculator1.pythagorascalculator;
 
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.prashantrizal.android.pythagoreancalculator.R;
+import com.prashantrizal.android.pythagoreancalculator1.R;
 
 import java.util.List;
 

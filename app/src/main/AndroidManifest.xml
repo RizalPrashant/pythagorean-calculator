@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.prashantrizal.android.pythagoreancalculator">
+    package="com.prashantrizal.android.pythagoreancalculator1">
 
     <application
         android:allowBackup="true"
@@ -8,9 +8,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".pythagorascalculator.StepsActivity"></activity>
-        <activity android:name=".pythagorascalculator.HelpActivity"/>
-        <activity android:name=".pythagorascalculator.CalculatorActivity" >
+        <activity android:name="com.prashantrizal.android.pythagoreancalculator1.pythagorascalculator.StepsActivity"></activity>
+        <activity android:name="com.prashantrizal.android.pythagoreancalculator1.pythagorascalculator.HelpActivity"/>
+        <activity android:name="com.prashantrizal.android.pythagoreancalculator1.pythagorascalculator.CalculatorActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

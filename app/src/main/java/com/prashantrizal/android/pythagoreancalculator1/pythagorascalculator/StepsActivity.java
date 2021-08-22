@@ -1,28 +1,19 @@
-package com.prashantrizal.android.pythagoreancalculator.pythagorascalculator;
+package com.prashantrizal.android.pythagoreancalculator1.pythagorascalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.text.Html;
-import android.text.SpannableString;
-import android.text.Spanned;
-import android.text.style.SuperscriptSpan;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.prashantrizal.android.pythagoreancalculator.R;
+import com.prashantrizal.android.pythagoreancalculator1.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class StepsActivity extends AppCompatActivity {
     ListView listView;

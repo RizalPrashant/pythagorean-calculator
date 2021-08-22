@@ -36,7 +36,7 @@ INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-c
 INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-22:12
 INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:2:1-22:12
 	package
-		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:3:5-62
+		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:3:5-63
 		INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -71,18 +71,18 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/riza
 		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:10:9-65
-activity#com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.StepsActivity
-ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:11:9-81
+activity#com.prashantrizal.android.pythagoreancalculator1.pythagorascalculator.StepsActivity
+ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:11:9-129
 	android:name
-		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:11:19-69
-activity#com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.HelpActivity
-ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:12:9-70
+		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:11:19-117
+activity#com.prashantrizal.android.pythagoreancalculator1.pythagorascalculator.HelpActivity
+ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:12:9-118
 	android:name
-		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:12:19-68
-activity#com.prashantrizal.android.pythagoreancalculator.pythagorascalculator.CalculatorActivity
+		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:12:19-116
+activity#com.prashantrizal.android.pythagoreancalculator1.pythagorascalculator.CalculatorActivity
 ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:13:9-19:20
 	android:name
-		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:13:19-74
+		ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:13:19-122
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/rizalprashant/Documents/AndroidStudioProjects/pythagorean-calculator/app/src/main/AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
