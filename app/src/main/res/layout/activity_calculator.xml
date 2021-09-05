@@ -16,6 +16,8 @@
         app:navigationIcon="@drawable/ic_steps"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/triangle_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:title="Pythagoras Calculator"
         app:titleTextColor="@android:color/white"
         android:background="@drawable/toolbar_border">
@@ -39,6 +41,8 @@
             android:layout_marginHorizontal="40dp"
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
             app:layout_constraintBottom_toTopOf="@id/divider_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             android:background="@drawable/triangle_border"
             android:layout_gravity="center"
             android:paddingBottom="@dimen/activity_vertical_margin"
@@ -120,6 +124,8 @@
             android:layout_height="2dp"
             app:layout_constraintTop_toBottomOf="@+id/triangle_view"
             app:layout_constraintBottom_toTopOf="@id/input_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             android:background="#1152D1"/>
 
         <LinearLayout
@@ -130,6 +136,8 @@
             android:background="#E4DBE8"
             app:layout_constraintTop_toBottomOf="@+id/divider_line"
             app:layout_constraintBottom_toTopOf="@+id/button_holder_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             android:paddingHorizontal="40dp"
             android:paddingVertical="10dp"
             >
@@ -312,6 +320,9 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
+            android:id="@+id/divider_line_2"
+            app:layout_constraintTop_toBottomOf="@+id/input_view"
+            app:layout_constraintBottom_toTopOf="@+id/button_holder_view"
             android:background="#1152D1"/>
 
         <RelativeLayout
@@ -320,8 +331,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             android:layout_gravity="bottom"
-            app:layout_constraintTop_toBottomOf="@+id/input_view"
+            app:layout_constraintTop_toBottomOf="@+id/divider_line_2"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             android:id="@+id/button_holder_view"
             android:paddingHorizontal="40dp"
             android:paddingVertical="5dp"
