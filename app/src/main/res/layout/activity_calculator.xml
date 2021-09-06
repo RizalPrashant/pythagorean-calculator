@@ -17,7 +17,7 @@
         app:navigationIcon="@drawable/ic_steps"
         app:title="Pythagoras Calculator"
         app:titleTextColor="@android:color/white"
-        android:background="@drawable/toolbar_border">
+        android:background="@color/primary_orange">
 
         <ImageView
             android:id="@+id/info_button"
@@ -293,16 +293,18 @@
         </LinearLayout>
     </LinearLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:background="@drawable/bottombar_border"
+        android:background="@color/primary_orange"
         android:id="@+id/button_holder_layout"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3"
         android:layout_marginTop="18dp"
         android:layout_gravity="bottom"
-        android:paddingHorizontal="40dp"
         android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
         android:gravity="center_vertical"
         >
 
@@ -310,9 +312,8 @@
             android:id="@+id/button_calculate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:elevation="20dp"
+            android:layout_weight="1"
             android:backgroundTint="#F5F5F5"
             android:text="Calculate" />
 
@@ -322,9 +323,10 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/button_calculate"
             android:backgroundTint="#F5F5F5"
+            android:layout_weight="1"
             android:paddingLeft="12dp"
             android:layout_marginLeft="8dp"
-            android:text="Clear All" />
+            android:text="Clear" />
 
         <Button
             android:id="@+id/button_exit"
@@ -332,8 +334,9 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/button_reset"
             android:backgroundTint="#F5F5F5"
+            android:layout_weight="1"
             android:paddingLeft="12dp"
             android:layout_marginLeft="8dp"
-            android:text="Go Back" />
-    </RelativeLayout>
+            android:text="Back" />
+    </LinearLayout>
 </RelativeLayout>
