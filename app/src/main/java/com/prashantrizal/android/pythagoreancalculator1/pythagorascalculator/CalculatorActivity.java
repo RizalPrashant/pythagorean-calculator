@@ -2,6 +2,7 @@ package com.prashantrizal.android.pythagoreancalculator1.pythagorascalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,6 +15,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -78,7 +80,7 @@ public class CalculatorActivity extends AppCompatActivity {
         textView_angle_A = (TextView) findViewById(R.id.textView_angle_A);
         textView_angle_B = (TextView) findViewById(R.id.textView_angle_B);
 
-        LinearLayout mainLayout = (LinearLayout) findViewById(R.id.calculatorLayout);
+        RelativeLayout mainLayout = (RelativeLayout) findViewById(R.id.calculatorLayout);
         mainLayout.setOnTouchListener(new View.OnTouchListener() {
 
             @Override
